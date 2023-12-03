@@ -34,7 +34,7 @@ jobs:
 
       - name: Move artifact
         run: |
-          artifact=$(find target -name 'endihub-*.jar' -print -quit)
+          artifact=$(find target -name 'endiproxy-*.jar' -print -quit)
           if [ -n "$artifact" ]; then
             echo "Moving artifact: $artifact to target/endiproxy.jar"
             mv "$artifact" target/endiproxy.jar
